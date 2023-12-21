@@ -116,6 +116,23 @@ img{
   padding: 4rem 0 2rem;
 }
 
+.home__description{
+  margin-bottom: var(--mb-3);
+  text-align: left;
+}
+
+/* ========= Alinhar home centro mobile ====*/
+
+.mob_center{
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob_center{
+    text-align: center;
+  }
+}
+
 .section-title, .section-title-center{
   font-size: var(--h2-font-size);
   color: var(--title-color);
@@ -130,7 +147,7 @@ img{
 
 .bd-container{
   max-width: 968px;
-  width: calc(100% - 3rem);
+  width: calc(100% - rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
 }
@@ -157,7 +174,7 @@ img{
   align-items: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
   .nav__menu{
     position: fixed;
     top: -100%;
@@ -174,9 +191,10 @@ img{
     z-index: var(--z-fixed);
   }
   .nav__logo{
-    display: inline;
-    padding-top: 25px;
-
+    display: flex;
+    height:80%;
+    padding-bottom: 5px;
+    object-fit: cover;
   }
 }
 
@@ -192,10 +210,6 @@ img{
 .nav__link, .nav__logo, .nav__toggle{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-}
-
-.nav__logo:hover{
-  color: var(--first-color);
 }
 
 .nav__link{
