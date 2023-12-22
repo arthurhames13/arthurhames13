@@ -127,6 +127,10 @@ img{
   text-align: left;
 }
 
+.center{
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .mob_center{
     text-align: center;
