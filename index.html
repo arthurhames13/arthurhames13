@@ -104,24 +104,30 @@
                         <img src="assets/img/FastWhatsapp.png" alt="" class="accessory__img">
                         <h3 class="accessory__title">Whatsapp</h3>
                         <span class="accessory__category">Envie uma mensagem!</span>
-                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                        <a href="https://wa.me/+5511977375664" target="_blank" class="button accessory__button"><i class='bx bx-heart'></i></a>
                     </div>
 
                     <div class="accessory__content">
                         <img src="assets/img/FastEmail.png" alt="" class="accessory__img">
                         <h3 class="accessory__title">E-mail</h3>
                         <span class="accessory__category">Envie uma mensagem!</span>
-                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                        <a href="mailto:Gestaofast@outlook.com" class="button accessory__button"><i class='bx bx-heart'></i></a>
                     </div>
 
                     <div class="accessory__content">
                         <img src="assets/img/FastTelefone.png" alt="" class="accessory__img">
                         <h3 class="accessory__title">Telefone</h3>
                         <span class="accessory__category">Faça uma <br>ligação!</span>
-                        <a href="#" class="button accessory__button"><i class='bx bx-heart'></i></a>
+                        <p id="phoneButton" class="button accessory__button"><i class='bx bx-heart'></i></p>
                     </div>
                 </div>
             </section>
+            <script>
+                // Código JavaScript para lidar com a chamada telefônica
+                document.getElementById('phoneButton').addEventListener('click', function() {
+                  window.location.href = 'tel:+123456789';
+                });
+              </script>
 
 
         <!--========== FOOTER ==========-->
